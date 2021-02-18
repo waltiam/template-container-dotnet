@@ -1,0 +1,12 @@
+Dev Node
+========
+
+A C-Sharp dev image
+
+.Docker Commands
+[source, shell]
+----
+docker image build -t dotnet-dc .
+docker image tag $( docker image ls dotnet-dc --quiet ) wawa64/dotnet-dc:3.1
+docker image push  wawa64/dotnet-dc:3.1
+----
